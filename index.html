@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="shortcut icon" href="./assets/mylogo.png" type="image/x-icon" />
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaq.css">
+    <link rel="stylesheet" href="mode.css">
+
+</head>
+<style>
+</style>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Apurva</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#aboutme">About me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact me</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+        <div class="logo">Apurva</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+                <li><a href="#aboutme" onclick="toggleMenu()">About me</a></li>
+                <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact me</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home">
+        <div class="section--1 d-flex justify-content-center">
+            <img src="./assets/myself.jpg" alt="Apurva" class="section-pic" >
+        </div>
+        <div class="section-text d-flex flex-column flex-lg-column">
+            <div class="section-text-p1 flex-fill">
+                <h2 class="title"><span class="myname" style="letter-spacing: 4px;">Hey, I'm Apurv<button class="theme-toggle" id="theme-toggle" title="Toggles light & dark" aria-label="auto" aria-live="polite">
+                    <svg class="sun-and-moon" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24">
+                      <mask class="moon" id="moon-mask">
+                        <rect x="0" y="0" width="100%" height="100%" fill="white" />
+                        <circle cx="24" cy="10" r="6" fill="black" />
+                      </mask>
+                      <circle class="sun" cx="12" cy="12" r="6" mask="url(#moon-mask)" fill="currentColor" />
+                      <g class="sun-beams" stroke="currentColor">
+                        <line x1="12" y1="1" x2="12" y2="3" />
+                        <line x1="12" y1="21" x2="12" y2="23" />
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+                        <line x1="1" y1="12" x2="3" y2="12" />
+                        <line x1="21" y1="12" x2="23" y2="12" />
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+                       </g>
+                    </svg>
+                  </button> !</span></h2>
+            </div>
+            <h1 class="descp flex-fill" style="font-weight: 200;">
+                I'm an aspiring 
+                <span id="diff" >front-end developer</span>
+                and 
+                <span id="diff" >web designer</span><br>
+                I love crafting cool and fun websites with my creativity
+            </h1>
+            <div class="socials">
+                <img src="./assets/logos/linkedin-2.png" alt="My linked in profile" onclick="location.href='https://www.linkedin.com/in/apurva-bhaskare-107514279/'" class="icon">
+                <img src="./assets/logos/gitlogo.png" alt="My github profile" onclick="location.href='https://github.com/apurvab19'" class="icon">
+            </div>
+        </div>
+    </section>
+
+    <div class="separation"></div>
+
+    <div class="new d-flex justify-content-center" id="aboutme">
+        <div class="bg-white-t d-flex flex-column-reverse flex-lg-row row-cols-lg-2 gap-2 justify-content-center align-items-center">
+            <div class="m-lg-7 m-2 p-2 flex-fill">
+                <h1 class="section-subtitles">About me</h1>
+                <p class="section-aboutme-txt">
+                    I am a fresher who loves designing beautiful websites. I studied Bachelor's in Computer Science and am currently pursuing a Master's degree in the same field. I started with backend coding but soon realized my interest in design, leading me to frontend web development.
+                </p>
+            </div>
+            <div class="m-lg-1 p-1 d-flex justify-content-center">
+                <img src="./assets/me_again_2.jpg" class="phone1 img-fluid" alt="About me">
+            </div>
+        </div>
+    </div>
+    <div class="separation"></div>
+
+    <div class="skill-cont d-flex justify-content-center" id="skills">
+        <div class="skills-new py-5">
+            <h1 class="text-center py-3" style="font-size: 1.5rem; font-weight: 200;">My Skills include..</h1>
+            <section id="skills" class="container d-flex justify-content-center m-4">
+                <div class="row text-center">
+                    <div class="skill-box col-6 col-md-4 col-lg-3 mb-4">
+                        <div class="front-sub">
+                            <img src="./assets/logos/htmllogo.png" class="skills-logo img-fluid">
+                            <p class="skill-header mt-3">HTML</p>
+                            <p class="skill-sub">Experienced</p>
+                        </div>
+                    </div>
+                    <div class="skill-box col-6 col-md-4 col-lg-3 mb-4">
+                        <div class="front-sub">
+                            <img src="./assets/logos/csslogo.png" class="skills-logo img-fluid">
+                            <p class="skill-header mt-3">CSS</p>
+                            <p class="skill-sub">Experienced</p>
+                        </div>
+                    </div>
+                    <div class="skill-box col-6 col-md-4 col-lg-3 mb-4">
+                        <div class="front-sub">
+                            <img src="./assets/logos/jslogo.png" class="skills-logo img-fluid">
+                            <p class="skill-header mt-3">JavaScript</p>
+                            <p class="skill-sub">Intermediate</p>
+                        </div>
+                    </div>
+                    <div class="skill-box col-6 col-md-4 col-lg-3 mb-4">
+                        <div class="front-sub">
+                            <img src="./assets/logos/Bootstraplogo.png" class="skills-logo img-fluid">
+                            <p class="skill-header mt-3">Bootstrap</p>
+                            <p class="skill-sub">Experienced</p>
+                        </div>
+                    </div>
+                    <div class="skill-box col-6 col-md-4 col-lg-3 mb-4">
+                        <div class="front-sub">
+                            <img src="./assets/logos/figma.png" class="skills-logo img-fluid">
+                            <p class="skill-header mt-3">Figma</p>
+                            <p class="skill-sub">Intermediate</p>
+                        </div>
+                    </div>
+                    <div class="skill-box col-6 col-md-4 col-lg-3 mb-4">
+                        <div class="front-sub">
+                            <img src="./assets/logos/pythonlogo.png" class="skills-logo img-fluid">
+                            <p class="skill-header mt-3">Python</p>
+                            <p class="skill-sub">Intermediate</p>
+                        </div>
+                    </div>
+                    <div class="skill-box col-6 col-md-4 col-lg-3 mb-4">
+                        <div class="front-sub">
+                            <img src="./assets/logos/javalogo.png" class="skills-logo img-fluid">
+                            <p class="skill-header mt-3">Java</p>
+                            <p class="skill-sub">Intermediate</p>
+                        </div>
+                    </div>
+                    <div class="skill-box col-6 col-md-4 col-lg-3 mb-4">
+                        <div class="front-sub">
+                            <img src="./assets/logos/phplogo.png" class="skills-logo img-fluid">
+                            <p class="skill-header mt-3">PHP</p>
+                            <p class="skill-sub">Intermediate</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    
+
+    <div class="separation"></div>
+
+    <div id="projects">
+        <div class="myproj">
+              <section id="projectss" class="py-2">
+
+                        <h4 class="px-4">Take a look at some projects I've worked on..</h4>
+                        <div class="proj-box">
+                            <div class=" d-flex flex-column-reverse flex-lg-row-reverse row-cols-lg-2 gap-2 align-items-left" style="color: white;text-align: left;">
+                                <div><img src="./assets/PurrfectMatch.png" class=" img-fluid" alt=""  style="border-radius: 10px;"></div>
+                                    <div class=""><div class="m-lg-5 m-4 flex-fill" ><h1>Purrfect Match</h1>
+                                    <p class="py-3">This was my college project on which i designed and framed the frontend part of the website which is my very first web designing experience</p>
+                                    <!-- <a target="_blank" href=""><button class="px-4">Live Demo</button></a></div> -->
+                                    <a target="_blank" href=""><button class="px-4">Live Demo</button></a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="proj-box">
+                            <div class=" d-flex flex-column-reverse flex-lg-row row-cols-lg-2 gap-2 align-items-left" style="color: white;text-align: left;">
+                                <div><img src="./assets/Tindog.png" class=" img-fluid" alt=""  style="border-radius: 10px;"></div>
+                                    <div class=""><div class="m-lg-5 m-4 flex-fill" ><h1>TinDog</h1>
+                                    <p class="py-3">Udemy's first capstone project designed using HTML, CSS and Bootstrap called as - "Tindog" is a website designed as to be user friendly and interactive which is so simple that even a dog can use!</p>
+                                    <a target="_blank" href="https://apurvab19.github.io/Tindog/"><button class="px-4">Live Demo</button></a></div>
+                                </div>
+                            </div>
+                        </div>
+
+                </section>
+        </div>
+    </div>
+
+    <div class="separation"></div>
+
+    <section id="contact">
+        <div class="bg-white-c d-flex flex-column flex-lg-row row-cols-lg-2 gap-2 align-items-center">
+          <div class="m-lg-5 m-4 p-2 flex-fill" >
+            <h2 class="contact-subtitles">Let's get in touch...</h2><br/><br/>
+            <p class="contact-aboutme">Feel free to drop me an email here<br/><br/>
+                <span class="diff-2">apurvabhaskare2003@gmail.com</span></p>
+         </div>
+      
+          <div class="m-lg-5 m-4 flex-fill d-flex justify-content-center">
+            <div class="contact-box">
+                <form method="post" action="https://formspree.io/f/xeqyyzre">
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-12">
+                            <label>Email :</label>
+                        </div>
+                        <div class="col-lg-6 col-sm-12">
+                            <input type="email" name="email" required><br><br>
+                        </div>
+            
+                        <div class="col-lg-6 col-sm-12">
+                            <label>Name :</label>
+                        </div>
+
+                        <div class="col-lg-6 col-sm-12">
+                            <input type="text" name="subject" required><br><br>
+                        </div>
+                            
+                        <div class="col-lg-6 col-sm-12">
+                            <label>Message :</label>
+                        </div>
+
+                        <div class="col-lg-6 col-sm-12">
+                            <textarea name="message" required></textarea><br><br>
+                        </div>
+
+                        <div class="col-lg-12 col-sm-12 d-flex justify-content-center">
+                            <input type="submit" value="Submit" class="px-4"><br><br>
+                        </div>
+                    </div>
+                </form>
+            </div>
+          </div>
+         </section>
+    <div class="separation"></div>
+    <footer>
+        <p>&copy; Apurva | Portfolio</p>
+    </footer>
+    
+
+    <script src="script.js"></script>
+    <script src="mode.js"></script>
+</body>
+</html>

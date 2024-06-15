@@ -1,0 +1,302 @@
+@media screen and (max-width:1000px) {
+    #desktop-nav{
+        display: none;
+        transition: all 200ms ease;
+    }
+    #hamburger-nav{
+        display: flex;
+        transition: all 200ms ease;
+    }
+    :root{
+        --darkblue-color:#1A1423;
+        --redpink-color: #B75D69;
+        --skin-color: white;
+        /* --section-home-width:; */
+    }
+    nav{
+        background-color: var(--redpink-color);
+        width: auto;
+        padding: 5px;
+    }
+    body{
+        background-color: var(--darkblue-color);
+    }
+    .logo{
+        color: var(--darkblue-color);
+        font-size: 2.5rem;
+    }
+    .logo:hover{
+        cursor: default;
+        color: var(--redpink-color);
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: var(--darkblue-color);
+        transition: all 200ms ease;
+    }
+    section{
+        margin: 20px;
+    }
+    #home{
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        height: 100vh;
+        flex-wrap: wrap;
+        flex-direction: row;
+        background: var(--darkblue-color);
+        /* margin:0 10rem;
+        padding: 100px; */
+    }
+    .section-pic{
+        display: flex;
+        height: 200px;
+        margin: auto 0;
+    }
+    .socials{
+        display: flex;
+        justify-content: left;
+        margin-top: 1rem;
+        gap: 1rem;
+    }
+    .icon{
+        cursor: pointer;
+        height: 1.5rem;
+    }
+    .section-text {
+        font-size: 0.9rem;
+        font-weight: 200;
+        color: var(--skin-color);
+        cursor: default;
+        align-self: center;
+        text-align: left;
+    }
+    #diff {
+        font-size: 1.6rem;
+        font-weight: 200;
+        color: var(--darkblue-color);
+        -webkit-text-stroke-width: 0.8px;
+        -webkit-text-stroke-color: var(--redpink-color);
+    }
+    #diff:hover{
+        color: var(--redpink-color);
+        transition: all 200ms ease;
+    }
+}
+
+/* for about me */
+@media (max-width: 992px) {
+    #home{
+        gap: 1rem;
+        background-color: var(--darkblue-color);
+    }
+    .new{
+        padding: 10px;
+        margin: 0px;
+    }
+
+    .section-subtitles {
+        font-size: 1.5rem;
+        padding: 10px;
+        margin: 0;
+    }
+
+    .section-aboutme-txt {
+        font-size: 0.9rem;
+        padding: 10px;
+        margin: 0;
+    }
+
+    .phone1 {
+        max-width: 300px;
+        padding: 10px;
+        margin: 0;
+    }
+    .bg-white-t{
+        padding: 10px;
+        margin: 0%;
+    }
+    .skill-header{
+        font-size: 1rem;
+        font-weight: 200;
+    }
+    .skill-sub{
+        font-size: 0.5rem;
+        font-weight: 200;
+    }
+    .skills-logo{
+        height: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    #home{
+        gap: 1rem;
+        background: var(--darkblue-color);
+    }
+
+    /* for about me  */
+    .new{
+        padding: 0px;
+        margin: 0px;
+    }
+    .section-subtitles {
+        font-size: 2rem;
+        padding: 10px;
+        margin: 0%;
+    }
+
+    .section-aboutme-txt {
+        font-size: 1rem;
+        padding: 10px;
+        margin: 0%;
+    }
+
+    .phone1 {
+        max-width: 200px;
+        padding: 0%;
+        margin: 0%;
+        margin-top: 10px;
+    }
+    .skill-header{
+        font-size: 1rem;
+        font-weight: 200;
+    }
+    .skill-sub{
+        font-size: 0.5rem;
+        font-weight: 200;
+    }
+    .skills-logo{
+        height: 1.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    /* for home */
+    .home{
+        padding-left: 0%;
+        padding-right: 0%;
+        gap: 1rem;
+        background: var(--darkblue-color);
+    }
+
+    /* for about me  */
+    .new{
+        padding: 0px;
+        margin: 0px;
+    }
+    .bg-white-t{
+        padding: 20px;
+    }
+    .section-subtitles {
+        font-size: 2rem;
+        padding: 10px;
+        margin: 0%;
+    }
+
+    .section-aboutme-txt {
+        font-size: 1rem;
+        padding: 10px;
+        margin: 0%;
+    }
+
+    .phone1 {
+        max-width: 200px;
+        padding: 0px;
+        margin: 0px;
+        margin-top: 10px;
+    }
+    .skill-header{
+        font-size: 1rem;
+        font-weight: 200;
+    }
+    .skill-sub{
+        font-size: 0.5rem;
+        font-weight: 200;
+    }
+    .skills-logo{
+        height: 1.5rem;
+    }
+}
+
+
+
+/* for home */
+@media (max-width: 992px) {
+    .home{
+        padding: 200px;
+        margin: 0px;
+        padding-left: 0%;
+        padding-right: 0%;
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        background: var(--darkblue-color);
+    }
+
+    .myname {
+        font-size: 1.6rem;
+        margin: 0;
+        padding: none;
+        white-space: nowrap;
+        animation: none;
+        border-right: 2px solid #eacdc291;
+        animation: animated-text 4s steps(16, end) 1s 1 normal both, animated-cursor 600ms steps(30, end) infinite;
+    }
+    .sun-and-moon {
+        width: 1.4rem; /* Adjust size as needed */
+        height: 1.4rem; /* Adjust size as needed */
+        vertical-align: middle; /* Align the SVG vertically */
+        fill: currentColor; /* Ensure SVG inherits text color */
+    }
+    
+    /* Animation keyframes */
+    @keyframes animated-text {
+        from { width: 0; }
+        to { width: 18ch; }
+    }
+    
+    @keyframes animated-cursor {
+        from { border-right-color: rgba(255, 255, 255, .75); }
+        to { border-right-color: transparent; }
+    }
+
+    .descp {
+        font-size: 1.7rem;
+        /* padding: 10px; */
+        margin: 0;
+    }
+
+    .section-pic {
+        max-width: 300px;
+        padding: 0px;
+        margin: 0;
+    }
+    .skill-header{
+        font-size: 1rem;
+        font-weight: 200;
+    }
+    .skill-sub{
+        font-size: 0.5rem;
+        font-weight: 200;
+    }
+    .skills-logo{
+        height: 1.5rem;
+    }
+}
+@media (max-width: 375px) {
+    #home{
+        padding:10px;
+        gap: 1rem;
+        background: var(--darkblue-color);
+    }
+    .skill-header{
+        font-size: 1rem;
+        font-weight: 200;
+    }
+    .skill-sub{
+        font-size: 0.5rem;
+        font-weight: 200;
+    }
+    .skills-logo{
+        height: 1.5rem;
+    }
+}
