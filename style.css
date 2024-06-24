@@ -119,7 +119,7 @@ a:hover{
     list-style: none;
 }
 .menu-links.open{
-    max-height: 300px;
+    max-height: max-content;
 }
 .hamburger-icon.open span:first-child{
     transform: rotate(45deg) translate(10px,5px);
