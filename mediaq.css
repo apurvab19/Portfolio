@@ -300,3 +300,11 @@
         height: 1.5rem;
     }
 }
+@media screen and (max-width: 1100px) {
+    .section-subtitles{
+        font-size: 2rem;
+    }
+    .section-aboutme-txt {
+        font-size: 1.2rem;
+    }
+}
